@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+
+}
+.back{
+  background-image: url('Home.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+background-color:f7b538;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: 780116;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+  color: white;
+}
+h1{
+    color:white;
+    font-size: 100px;
+    font-family: Forte;
+    text-align: center;
+}
+.contact{
+  margin-top: 500px;
+  background-color: 468faf;/* 5fa8d3;*/
+  
+}
+.tbl_contact{
+  margin-left: 40%;
+}
+table{
+  text-align: center;
+  border: solid;
+  height: 20px;
+  font-size: 20px;
+}
+th{
+  float: left;
+}
+

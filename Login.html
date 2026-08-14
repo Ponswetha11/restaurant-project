@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src='Validate.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="left">
+        </div>
+        <div class="right">
+            <h1>Tasty <br><span class="Head">Foods</span></h1>
+                <h2>Welcome Back,<span class="login-text"> Login</span><br>
+                <h3>
+                <span class="login-text1">Hey.Enter Your Details to get sign in to your
+                 account</span></h3></h2>
+            <form class="login" id="LoginForm" onsubmit="return validateForm()">
+                    <label for="Uname">User Name*</label>
+                    <input type="text" id="Uname" maxlength="30"  placeholder="Uswrename"  onkeypress="return restrictSpace(event)" 
+                    required> 
+                    <label for="Pass">Password*</label>
+                    <input type="password" id="Pass" maxlength="7" placeholder="Password"  onkeypress="return restrictSpace(event)" 
+                    onkeyup="checkStrength()" required>
+                    <p id="strength"></p>
+                    <label for="Cpass">Confirm Password*</label>
+                    <input type="password" id="Cpass" maxlength="7"  placeholder="Confirm Password"
+                     onkeypress="return restrictSpace(event)" required>
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <button type="submit" onclick="return saveToFile()">submit</button>
+            </form>
+         </div>
+    </div>
+</body>
+</html>
